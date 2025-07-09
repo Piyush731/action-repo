@@ -17,7 +17,7 @@ jobs:
       - name: Trigger Webhook
         run: |
           echo "Sending webhook..."
-          curl -X POST https://<your-ngrok-or-server-url>/webhook \
+          curl -X POST https://9f5373793444.ngrok-free.app/webhook \
           -H "Content-Type: application/json" \
           -d '{
             "request_id": "'${{ github.sha }}'",
